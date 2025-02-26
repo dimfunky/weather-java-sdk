@@ -1,4 +1,4 @@
-# Kameleoon React SDK
+# Weather Java SDK
 
 ## Introduction
 
