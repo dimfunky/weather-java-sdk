@@ -29,10 +29,17 @@ public class WeatherTemplateFactory {
     }
 
     /**
-     * Creates an instance of {@link WeatherTemplate} based on the provided {@link WeatherEnvironment}.
+     * Creates an instance of {@link WeatherTemplate} based on the provided {@link WeatherEnvironment}
+     * and put it to a map {@link WeatherTemplateFactory#instances}, where:
+     * <p>
+     *     key - apiKey
+     * <p>
+     *     value - created {@link WeatherTemplate} instance
      * <p>
      * There are two types of environments that differ in their data cache update modes.
      * Data is considered to be up-to-date if less than 10 minutes have passed.
+     * <p>
+     * Types are:
      * <p>
      * - Updates the weather information in cache only on customer requests:
      * <blockquote><pre>
