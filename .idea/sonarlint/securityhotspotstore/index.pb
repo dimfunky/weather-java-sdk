@@ -49,3 +49,5 @@ n
 Ksrc/main/java/com/dimfunky/exception/WeatherServiceValidationException.java,9\1\913958d5d99c79b2784a4ebcb4fce70e17061e7b
 f
 6src/main/java/com/dimfunky/WeatherTemplateFactory.java,d\9\d9f8b73bc898b164ea4f0a0bf5ea6e22d5d226e4
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d

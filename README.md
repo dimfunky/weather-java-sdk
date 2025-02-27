@@ -2,12 +2,12 @@
 
 ## Introduction
 
-
-
-Weather Java SDK is used to easily access a "Free Access weather API" <a href="https://openweathermap.org">OpenWeatherMap</a> and retrieve simplified weather data for a given location using Java language.
+Weather Java SDK is used to easily access a "Free Access weather API" <a href="https://openweathermap.org">
+OpenWeatherMap</a> and retrieve simplified weather data for a given location using Java language.
 The package provides methods for retrieving data in JSON format or as object, using a location name as a string input.
-SDK calls to 
-This page describes basic configuration and usage example. For more detailed information on using the SDK, refer to the built-in JavaDoc.
+SDK calls to
+This page describes basic configuration and usage example. For more detailed information on using the SDK, refer to the
+built-in JavaDoc.
 
 ## Contents
 
@@ -16,16 +16,33 @@ This page describes basic configuration and usage example. For more detailed inf
 - [Usage Example](#usage-example)
 
 ## Installation
-From source code with Maven:
+
+1. From source code with Maven:
+
 - download source code
 - run command in SDK project folder - `mvn clean install`
 - add dependency to your `.pom` file:
+
 ```xml
+
 <dependency>
     <groupId>com.dimfunky</groupId>
     <artifactId>weather-java-sdk</artifactId>
     <version>1.0.0</version>
 </dependency>
+```
+
+2. If you have GitHub personal access token, you can add repository to your settings.xml
+   and pull the package
+
+```xml
+
+<repositories>
+    <repository>
+        <id>github</id>
+        <url>https://maven.pkg.github.com/dimfunky/weather-java-sdk</url>
+    </repository>
+</repositories>
 ```
 
 ## Configuration
@@ -53,7 +70,7 @@ public class WeatherService {
 ```java
 public class WeatherService {
     private static final String API_KEY = "1234567890abcdefabcdef1234567890";
-    
+
     // Example of getting instance of an existing template by apiKey
     // Getting JSON string weather data
     public String getWeatherString(final String cityName) {
