@@ -5,7 +5,8 @@
 Weather Java SDK is used to easily access a "Free Access weather API" <a href="https://openweathermap.org">
 OpenWeatherMap</a> and retrieve simplified weather data for a given location using Java language.
 The package provides methods for retrieving data in JSON format or as object, using a location name as a string input.
-SDK calls to
+Also, SDK implements a cache to store weather data and provide a zero-latency response for requests.
+<p>
 This page describes basic configuration and usage example. For more detailed information on using the SDK, refer to the
 built-in JavaDoc.
 
